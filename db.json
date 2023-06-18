@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "studentName": "siva",
+      "dob": "2001-04-06T07:00:00.000Z",
+      "gender": "male",
+      "course": "IT",
+      "id": 1
+    },
+    {
+      "studentName": "Raviselvam",
+      "dob": "1996-03-20T08:00:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 2
+    },
+    {
+      "studentName": "Riyas",
+      "dob": "2002-07-10T07:00:00.000Z",
+      "gender": "male",
+      "course": "EEE",
+      "id": 3
+    }
+  ],
+  "marks": [
+    {
+      "studentName": "siva",
+      "english": 95,
+      "maths": 99,
+      "science": 100,
+      "id": 1
+    },
+    {
+      "studentName": "Raviselvam",
+      "english": 89,
+      "maths": 96,
+      "science": 100,
+      "id": 2
+    },
+    {
+      "studentName": "Riyas",
+      "english": 85,
+      "maths": 99,
+      "science": 98,
+      "id": 3
+    }
+  ]
+}

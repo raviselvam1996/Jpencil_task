@@ -1,0 +1,58 @@
+<mat-card class="card">
+  <mat-card-content>
+    <form [formGroup]="studentMarksForm" class="example-form">
+      <h1 style="text-align: center;font-size: 40px;">Student Marks Form </h1>
+
+      <!-- <mat-form-field  appearance="outline" class="example-full-width">
+        <mat-label>StudentName:</mat-label>
+        <mat-select *ngFor="let data of studentNames">
+          <mat-option value="">{{data.studentName}}</mat-option>
+          
+          
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field  appearance="outline" class="example-full-width">
+        <mat-label>StudentName</mat-label>
+        <mat-select formControlName="studentName">
+          <mat-option *ngFor="let list of studentNames" [value]="list.studentName">
+            {{list.studentName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <!-- <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Student Name:</mat-label>
+            <input type="text" matInput placeholder="StudentName" formControlName="studentName">
+           
+          </mat-form-field>
+        </p> -->
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>English Mark:</mat-label>
+            <input matInput type="number" placeholder="English" formControlName="english">
+           
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Maths Mark:</mat-label>
+            <input matInput type="number" placeholder="Maths" formControlName="maths">
+           
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Science Mark:</mat-label>
+            <input matInput type="number" placeholder="Science" formControlName="science">
+           
+          </mat-form-field>
+        </p>
+  
+        <button mat-raised-button color="primary" [disabled]="!studentMarksForm.valid" (click)="addMarks()">Register</button>
+        <button mat-raised-button color="warn" class="ms-3" type="reset">Reset</button>
+  
+  
+  
+        </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,59 @@
+<p>student-form works!</p>
+<mat-card class="card">
+  <mat-card-content>
+    <h1 style="text-align: center;font-size: 40px;">Student Form</h1>
+    <form [formGroup]="studentForm" class="example-form">
+      <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Student Name:</mat-label>
+            <input matInput type="text" placeholder="StundentName" formControlName="studentName">
+
+            <mat-error>
+              <small *ngIf="studentForm.get('studentName')?.hasError('required') && !studentForm.get('studentName')?.dirty"> Student name is required.....</small>
+             
+              <small *ngIf="studentForm.get('studentName')?.hasError('pattern')" >Only Alpha & Space & Special chars allowed</small>
+
+            </mat-error>
+          </mat-form-field>
+        </p>
+        <mat-form-field appearance="outline" class="example-full-width">
+          <mat-label>Date of Birth:</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="D.O.B" formControlName="dob">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error>
+            <small *ngIf="studentForm.get('dob')?.hasError('required') && !studentForm.get('dob')?.dirty"> Date is required.....</small>
+           
+           
+
+          </mat-error>
+        </mat-form-field>
+        
+      
+        
+        <mat-radio-group aria-label="Select an option" formControlName="gender">
+          <mat-label style="font-size:18px;">Gender:</mat-label>
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group><br>
+  
+        <mat-form-field  appearance="outline" class="example-full-width">
+          <mat-label>Course:</mat-label>
+          <mat-select formControlName="course">
+            <mat-option value="IT">IT</mat-option>
+            <mat-option value="ECE">ECE</mat-option>
+            <mat-option value="EEE">EEE</mat-option>
+            
+          </mat-select>
+        </mat-form-field><br>
+  <div class="float-end">
+        <button mat-raised-button color="primary" [disabled]="!studentForm.valid" (click)="studentRegister()">Register</button>
+        <button mat-raised-button color="warn" class="ms-3" type="reset">Reset</button>
+   </div>     
+        
+  
+  </form>
+  </mat-card-content>
+</mat-card>
+
