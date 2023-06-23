@@ -5,7 +5,7 @@
     <form [formGroup]="studentForm" class="example-form">
       <p>
           <mat-form-field appearance="outline" class="example-full-width">
-            <mat-label>Student Name raviselvam:</mat-label>
+            <mat-label>STUDENT NAME:</mat-label>
             <input matInput type="text" placeholder="StundentName" formControlName="studentName">
 
             <mat-error>
@@ -17,7 +17,7 @@
           </mat-form-field>
         </p>
         <mat-form-field appearance="outline" class="example-full-width">
-          <mat-label>Date of Birth:</mat-label>
+          <mat-label>DOB:</mat-label>
           <input matInput [matDatepicker]="picker" placeholder="D.O.B" formControlName="dob">
           <mat-hint>MM/DD/YYYY</mat-hint>
           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
