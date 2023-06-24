@@ -44,12 +44,31 @@ export class StudentFormComponent {
   // }
 
  studentRegister(){
-  console.log(this.studentForm.value.studentName);
-  
+  // console.log(this.studentForm.value.studentName);
+
+  this.http.get("http://localhost:3000/posts").subscribe((res:any) => {
+
+  let ravi=res.some((p:any) =>{
+   return p.studentName === this.studentForm.value.studentName
+    console.log(p.studentName);
+   
+})
+console.log(ravi);
+
+if(ravi){
+  alert('Usser name already exixstd')
+}
+else{
+ 
   this.http.post('http://localhost:3000/posts',this.studentForm.value).subscribe();
   this.studentForm.reset();
   this.service.openSnackBar("Registered successfully","Ok")
   this.router.navigate(['/student-marks'])
+}
+  })
+  
+  
+
   
 
  }

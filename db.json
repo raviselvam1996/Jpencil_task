@@ -34,6 +34,62 @@
       "gender": "male",
       "course": "EEE",
       "id": 5
+    },
+    {
+      "studentName": "ravipon",
+      "dob": "2023-06-26T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 6
+    },
+    {
+      "studentName": "siva",
+      "dob": "2023-06-14T18:30:00.000Z",
+      "gender": "male",
+      "course": "EEE",
+      "id": 7
+    },
+    {
+      "studentName": "ravi",
+      "dob": "2023-06-12T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 8
+    },
+    {
+      "studentName": "ravi",
+      "dob": "2023-06-21T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 9
+    },
+    {
+      "studentName": "ravi",
+      "dob": "2023-06-13T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 10
+    },
+    {
+      "studentName": "ravi",
+      "dob": "2023-06-20T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 11
+    },
+    {
+      "studentName": "ponsiva",
+      "dob": "2023-06-20T18:30:00.000Z",
+      "gender": "male",
+      "course": "",
+      "id": 12
+    },
+    {
+      "studentName": "ravi",
+      "dob": "2023-06-14T18:30:00.000Z",
+      "gender": "male",
+      "course": "",
+      "id": 13
     }
   ],
   "marks": [
