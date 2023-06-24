@@ -1,0 +1,44 @@
+<p>student-form works!</p>
+<mat-card class="card">
+  <mat-card-content>
+    <h1 style="text-align:center;font-size: 40px;">Student Form</h1>
+   
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>STUDENT NAME:</mat-label>
+            <input matInput type="text" placeholder="StundentName" name="studentName" [(ngModel)]="record.studentName" >
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>English:</mat-label>
+            <input matInput type="text" placeholder="English" name="english" [(ngModel)]="record.english" >
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Maths:</mat-label>
+            <input matInput type="text" placeholder="Maths" name="maths" [(ngModel)]="record.maths" >
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Science:</mat-label>
+            <input matInput type="text" placeholder="Science" name="science" [(ngModel)]="record.science" >
+          </mat-form-field>
+        </p>
+     
+        
+      
+       
+  
+  <div class="float-end">
+        <button mat-raised-button color="primary" (click)="updateStudent()">Edit</button>
+        
+   </div>     
+        
+  
+ 
+  </mat-card-content>
+</mat-card>
+

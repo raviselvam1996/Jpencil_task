@@ -20,29 +20,36 @@
       "gender": "male",
       "course": "EEE",
       "id": 3
+    },
+    {
+      "studentName": "raviselvam",
+      "dob": "2023-06-15T18:30:00.000Z",
+      "gender": "male",
+      "course": "ECE",
+      "id": 4
+    },
+    {
+      "studentName": "ponsiva",
+      "dob": "2023-06-27T18:30:00.000Z",
+      "gender": "male",
+      "course": "EEE",
+      "id": 5
     }
   ],
   "marks": [
-    {
-      "studentName": "siva",
-      "english": 95,
-      "maths": 99,
-      "science": 100,
-      "id": 1
-    },
-    {
-      "studentName": "Raviselvam",
-      "english": 89,
-      "maths": 96,
-      "science": 100,
-      "id": 2
-    },
     {
       "studentName": "Riyas",
       "english": 85,
       "maths": 99,
       "science": 98,
       "id": 3
+    },
+    {
+      "studentName": "raviselvamselvam",
+      "english": "42000000",
+      "maths": "23230000000",
+      "science": "242000000",
+      "id": 4
     }
   ]
 }

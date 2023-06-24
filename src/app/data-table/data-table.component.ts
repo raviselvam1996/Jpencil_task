@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Params } from '@angular/router';
+import { StudentService } from '../student.service';
+import { Record } from '../record';
+
 
 
 
@@ -13,12 +16,14 @@ import { ActivatedRoute,Params } from '@angular/router';
   styleUrls: ['./data-table.component.css']
 })
 export class DataTableComponent implements OnInit{
-  displayedColumns: string[] = ['studentName', 'english', 'maths', 'science'];
+  displayedColumns: string[] = ['studentName', 'english', 'maths', 'science','delete','edit'];
   
   datas:any;
   dataid:any;
+ student:Record[]=[];
+ record = new Record();
 
-  constructor(private http:HttpClient,private activatedroute:ActivatedRoute){}
+  constructor(private http:HttpClient,private activatedroute:ActivatedRoute,private service:StudentService){}
 
   studentData(){
     let patchUrl = "http://139.59.87.204/jpencil/student/api/student_list_marks.php"
@@ -49,6 +54,9 @@ export class DataTableComponent implements OnInit{
       console.log(this.datas);
       
     })
+  }
+  deleteMarks(sid:any){
+    this.service.delete(sid).subscribe();
   }
 
 }
